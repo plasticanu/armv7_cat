@@ -182,7 +182,7 @@ audio_play_sample:
 
 
 .data
-.align 2 # word boundry align the audio data
+.align 2 @ word boundry align the audio data
 .set BUFFER_COUNT, 3  @ must be >= 3
 .set BUFFER_ELEMENTS, 8
 .set BUFFER_SIZE, 2 * BUFFER_ELEMENTS
