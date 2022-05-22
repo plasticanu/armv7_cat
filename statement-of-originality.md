@@ -6,8 +6,8 @@ declaration: >-
   own work, with the following exceptions:
 
 # sign *your* name and uid here
-name: 
-uid: 
+name: Zhidong Piao
+uid: u7139999
 ---
 
 # Collaboration
@@ -15,30 +15,11 @@ uid:
 
 ***
 ### name: 
-name here
+Jun Cheng Zhang
+u7297753@anu.edu.au
 
 ### comment: 
 description of collaboration
 ***
-
-
-# Code
-*add as many "url+licence+comment" entries as necessary separated by *** (or remove it altogether if you haven't used any external assets)*
-***
-### comment: 
-description of usage (exactly outline what has been used and where)
-### url: 
-link to code online (or where it was acquired from)
-***
-
-
-# Assets
-*add as many "url+licence+comment" entries as necessary separated by *** (or remove it altogether if you haven't used any external assets)*
-***
-### comment: 
-description of usage
-### url: 
-link to asset online
-### licence: 
-type of licence for asset
-***
+He told me how to enable the button B (the button on the right side of the microbit).
+I studied from what he told me, and enabled the GPIOTE_CONFIG1 only. Then I changed the GPIOTE_INTENSET correspodingly by myself.
