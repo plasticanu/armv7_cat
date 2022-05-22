@@ -11,8 +11,15 @@ The major state interchange function is implemented by two function: update_stat
 
 The LED patterns are implemented row by row, which means to turn on some LEDs on the same row first, then turn them off, and turn on some LEDs on the other row etc. Thus, the LED pattern will be constantly shown in a loop, because the human eyes do not catch this high frequency change. The show_state will call the function contains a LED pattern.
 
+The interrupt handlers are bridges for changing states or values. Once a interrupt handler is called, it only writes some data to memory, for example, hunger level. There are data reader code that only exist in update_state or show_state to handle the event. 
+
 This digital pet has several states, therefore, the two major state related function update_state and show_state are appropriate to handle the states. They can handle many states without messing the code readability and safty. Additionaly, the two functions make the program extendable, since the programmer can add many state module and write them into the two functions. 
 
+The LED pattern implementation allows different LED patterns show together, for example, the food and the cat exist together.
+
+The interrupt handler design makes sure the program runs safely, because they do not call other functions. Additionaly, it makes the program extendable, because the programmer can add as many event functions.
+
+The LED animation design (dropping food) has some disadvantages because it still use a wait label to determine whether the time has past to a certain amount.
 
 
 
